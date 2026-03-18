@@ -13,7 +13,8 @@ const Contact = () => {
     setStatus('loading');
     
     try {
-      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+      const apiUrl = import.meta.env.VITE_API_URL || 'https://sukeerthan-portfolio-backend.onrender.com';
+      console.log(`[Connecting to Neural Backend]: ${apiUrl}/contact`);
       const response = await fetch(`${apiUrl}/contact`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
