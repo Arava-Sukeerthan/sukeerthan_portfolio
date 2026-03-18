@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" /> <!-- Violet-500 -->
+      <stop offset="100%" stop-color="#ec4899" /> <!-- Pink-500 -->
+    </linearGradient>
+  </defs>
+  
+  <rect width="100" height="100" rx="20" fill="#030014" />
+  
+  <path d="M 50 18 L 20 82 L 38 82 L 44 68 L 56 68 L 62 82 L 80 82 Z M 50 40 L 46 54 L 54 54 Z" fill="url(#grad)" fill-rule="evenodd" />
+</svg>
