@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ChevronDown, Database, Cpu, BrainCircuit } from 'lucide-react';
+import { ChevronDown, Database, Cpu, BrainCircuit, Download } from 'lucide-react';
 import SocialLinks from './SocialLinks';
 import ProfileImage from './ProfileImage';
 
@@ -67,8 +67,15 @@ const Hero = () => {
                 <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-600 to-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-0"></div>
               </a>
               
-              <a href="#contact" className="px-7 py-3.5 rounded-full border border-slate-700 hover:border-slate-500 bg-slate-900/50 hover:bg-slate-800 backdrop-blur-md text-slate-300 font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-cyan-500/50">
-                 View Resume 
+              <a 
+                href="/Resume.pdf" 
+                download="Sukeerthan_Resume.pdf"
+                className="group relative px-7 py-3.5 rounded-full border border-slate-700 hover:border-cyan-500/50 bg-slate-900/50 hover:bg-slate-800/80 backdrop-blur-md text-slate-300 hover:text-white font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-cyan-500/50 overflow-hidden shadow-lg hover:shadow-[0_0_20px_rgba(6,182,212,0.2)]"
+              >
+                <span className="relative z-10 flex items-center gap-2">
+                  View Resume <Download size={18} className="group-hover:translate-y-0.5 transition-transform" />
+                </span>
+                <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-cyan-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </a>
             </motion.div>
 
