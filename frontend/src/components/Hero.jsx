@@ -68,8 +68,9 @@ const Hero = () => {
               </a>
               
               <a 
-                href="/Resume.pdf" 
-                download="Sukeerthan_Resume.pdf"
+                href="/resume.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer"
                 className="group relative px-7 py-3.5 rounded-full border border-slate-700 hover:border-cyan-500/50 bg-slate-900/50 hover:bg-slate-800/80 backdrop-blur-md text-slate-300 hover:text-white font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-cyan-500/50 overflow-hidden shadow-lg hover:shadow-[0_0_20px_rgba(6,182,212,0.2)]"
               >
                 <span className="relative z-10 flex items-center gap-2">
