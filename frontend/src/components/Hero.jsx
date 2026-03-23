@@ -71,12 +71,13 @@ const Hero = () => {
                 href="/resume.pdf" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="group relative px-7 py-3.5 rounded-full border border-slate-700 hover:border-cyan-500/50 bg-slate-900/50 hover:bg-slate-800/80 backdrop-blur-md text-slate-300 hover:text-white font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-cyan-500/50 overflow-hidden shadow-lg hover:shadow-[0_0_20px_rgba(6,182,212,0.2)]"
               >
-                <span className="relative z-10 flex items-center gap-2">
-                  View Resume <Download size={18} className="group-hover:translate-y-0.5 transition-transform" />
-                </span>
-                <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-cyan-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <button className="group relative px-7 py-3.5 rounded-full border border-slate-700 hover:border-cyan-500/50 bg-slate-900/50 hover:bg-slate-800/80 backdrop-blur-md text-slate-300 hover:text-white font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-cyan-500/50 overflow-hidden shadow-lg hover:shadow-[0_0_20px_rgba(6,182,212,0.2)]">
+                  <span className="relative z-10 flex items-center gap-2">
+                    View Resume <Download size={18} className="group-hover:translate-y-0.5 transition-transform" />
+                  </span>
+                  <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-cyan-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </button>
               </a>
             </motion.div>
 
